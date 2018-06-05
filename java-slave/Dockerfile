@@ -9,7 +9,7 @@ RUN apt-get install -y openssh-server
 RUN sed -i 's|session required pam_loginuid.so|session optional pam_loginuid.so|g' /etc/pam.d/sshd
 RUN mkdir -p /var/run/sshd
 
-RUN apt-get install -y openjdk-8-jdk
+RUN apt-get install -y openjdk-9-jdk
 
 RUN adduser --quiet jenkins
 
